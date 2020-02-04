@@ -1,4 +1,19 @@
-/* common */
+/* 
+    1-Common Styles
+    2-General Styles
+    3-Sections Styles
+       3-0- Nav bar Section 
+       3-1- Home Section 
+       3-2- About Section 
+       3-3- Portfolio Section 
+       3-4- Service Section 
+       3-5- Prices Section 
+       3-6- Team Section 
+       3-7- Contact Section 
+       3-8- Blog Page
+       3-9- Footer Section
+*/
+/* 1-Common Styles */
 /* 
 - opacity hover
 -section header
@@ -6,6 +21,8 @@
 hover effect 1 ( left to right)
 -hover effect 2 ( top to bottom)
 */
+
+/*  2-General Styles */
 *{
     margin: 0px;
     padding: 0px;
@@ -14,12 +31,43 @@ hover effect 1 ( left to right)
 body{
     font-family: 'Varela Round', sans-serif;
 }
+
+/* 3-Sections Styles  */
+/*3-0- Nav bar Section */
 .container {
     width:80%;
-    height: 20px;
-    background-color: brown;
     margin: auto;
 }
 nav{
-     background: chartreuse;
+     background: gray;
 }
+nav .logo {
+    width: 40%;
+    /* background: red; */
+    float: left;
+}
+nav .nav{
+    width: 60%;
+    /* background: green; */
+    float: right;
+}
+.clear{
+    clear: both;
+}
+nav .nav li{
+   list-style: none; 
+   display: inline-block;
+}
+nav .nav li a{
+    text-decoration: none;
+    color: #ffffff; 
+    padding: 35px 15px;
+    display: block;
+}
+/* Home Section */
+/* About Section */
+/* Portfolio Section */
+/* Service Section */
+/* Prices Section */
+/* Team Section */
+/* Contact Section */
