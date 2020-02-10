@@ -21,6 +21,15 @@
 hover effect 1 ( left to right)
 -hover effect 2 ( top to bottom)
 */
+/*  1-Common Styles */
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
 
 /*  2-General Styles */
 *{
@@ -31,24 +40,26 @@ hover effect 1 ( left to right)
 body{
     font-family: 'Varela Round', sans-serif;
 }
+h1 ,h2, h3, h4, h5, h6{
+    font-family: montserrat,sans-serif;
 
+}
 /* 3-Sections Styles  */
 /*3-0- Nav bar Section */
 .container {
     width:80%;
     margin: auto;
 }
+
 nav{
      background: gray;
 }
 nav .logo {
     width: 40%;
-    /* background: red; */
     float: left;
 }
 nav .nav{
     width: 60%;
-    /* background: green; */
     float: right;
 }
 .clear{
@@ -73,21 +84,21 @@ nav .nav li{
     color: #ffffff;
     position: relative;
 }
-.overlay{
+/* Hero Image */
+.home-content{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.7);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
-.title{
+.home .title{
     text-transform: uppercase;
-    font-size: xx-large;
+    font-size: 3.1rem;
 }
 .home-disc{
-
+    margin: 10px 0;
 }
+
 /* About Section */
 /* Portfolio Section */
 /* Service Section */
