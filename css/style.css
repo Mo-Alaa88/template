@@ -15,9 +15,10 @@
 */
 /* 1-Common Styles */
 /* 
+- overlay
 - opacity hover
--section header
--section padding
+- section header
+- section padding
 hover effect 1 ( left to right)
 -hover effect 2 ( top to bottom)
 */
@@ -30,7 +31,13 @@ hover effect 1 ( left to right)
     left: 0;
     background-color: rgba(0,0,0,0.7);
 }
+.hover-opacity{
+    transition: opacity 0.5s
+}
 
+.hover-opacity:hover{
+    opacity: 0.8s;
+}
 /*  2-General Styles */
 *{
     margin: 0px;
@@ -43,6 +50,9 @@ body{
 h1 ,h2, h3, h4, h5, h6{
     font-family: montserrat,sans-serif;
 
+}
+button{
+    font-family: inherit;
 }
 /* 3-Sections Styles  */
 /*3-0- Nav bar Section */
@@ -87,18 +97,37 @@ nav .nav li{
 /* Hero Image */
 .home-content{
     position: absolute;
+    width: 65%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 .home .title{
     text-transform: uppercase;
-    font-size: 3.1rem;
+    font-size: 3.5rem;
 }
 .home-disc{
     margin: 10px 0;
+    letter-spacing: 2px;
+    line-height: 15px;
 }
 
+.home .btn{
+    padding: 1vh 1.5vw;
+    border-radius: 5px;
+    border: 0px;
+    min-width: 160px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.home .btn-start{
+    margin-right: 10px;
+    background-color: #ffffff;
+}
+.home .btn-more{
+    background-color: #6195ff;
+    color: #ffffff;
+}
 /* About Section */
 /* Portfolio Section */
 /* Service Section */
