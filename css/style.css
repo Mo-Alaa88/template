@@ -62,15 +62,24 @@ button{
 }
 
 nav{
-     background: gray;
+     /* background: gray; */
+     position: fixed;
+     width: 100vw;
+     z-index: 1;
+
 }
 nav .logo {
     width: 40%;
     float: left;
+
+}
+nav .logo img {
+    width: 30%;
 }
 nav .nav{
     width: 60%;
     float: right;
+    text-align: right;
 }
 .clear{
     clear: both;
@@ -84,6 +93,10 @@ nav .nav li{
     color: #ffffff; 
     padding: 35px 10px ;
     display: block;
+    font-size: 14px;
+}
+.nav li a.active::after{
+
 }
 /* Home Section */
 .home{
@@ -94,7 +107,7 @@ nav .nav li{
     color: #ffffff;
     position: relative;
 }
-/* Hero Image */
+/* Hero Image 
 .home-content{
     position: absolute;
     width: 65%;
