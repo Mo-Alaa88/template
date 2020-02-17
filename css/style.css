@@ -38,11 +38,14 @@ hover effect 1 ( left to right)
 .hover-opacity:hover{
     opacity: 0.8;
 }
-/*  2-General Styles */
+/*  2-General Styles - color*/
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+:root{
+    --mainMov: #6195ff;
 }
 body{
     font-family: 'Varela Round', sans-serif;
@@ -84,18 +87,42 @@ nav .nav{
 .clear{
     clear: both;
 }
-nav .nav li{
+nav .nav > li{
    list-style: none; 
    display: inline-block;
 }
-.nav li a{
+.nav > li > a{
     text-decoration: none;
     color: #ffffff; 
     padding: 35px 10px ;
     display: block;
     font-size: 14px;
 }
-.nav li a.active::after{
+
+.nav > li > a.active:after,
+.nav > li > a:after{
+    content: "";
+    display: block;
+    margin-top: 2px;
+    height: 2px;
+    background-color: var(--mainMov);
+}
+.nav > li > a.active:after{
+    width: 100%;
+}
+.nav > li > a:after{
+    width: 0%;
+}
+.nav > li > a:hover:after{
+    width: 100%;
+    transition: width 0.5s;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-menu{
+    position: absolute;
+    background-color: var(--mainMov);
 
 }
 /* Home Section */
@@ -107,7 +134,7 @@ nav .nav li{
     color: #ffffff;
     position: relative;
 }
-/* Hero Image 
+/* Hero Image */
 .home-content{
     position: absolute;
     width: 65%;
@@ -138,7 +165,7 @@ nav .nav li{
     background-color: #ffffff;
 }
 .home .btn-more{
-    background-color: #6195ff;
+    background-color: var(--mainMov);
     color: #ffffff;
 }
 /* About Section */
