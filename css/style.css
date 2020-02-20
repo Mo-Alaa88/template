@@ -46,6 +46,7 @@ hover effect 1 ( left to right)
 }
 :root{
     --mainMov: #6195ff;
+    --mainWhite: #ffffff;
 }
 body{
     font-family: 'Varela Round', sans-serif;
@@ -123,7 +124,23 @@ nav .nav > li{
 .dropdown-menu{
     position: absolute;
     background-color: var(--mainMov);
-
+    list-style: none;
+    text-align: center;
+    width: 10vw;
+    left: -50%;
+    top: 70%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ,visibilty 0.5s;
+}
+.dropdown-menu > li > a{
+    color: var(--mainWhite);
+    display: block;
+    text-decoration: none;
+}
+.dropdown:hover .dropdown-menu{
+    visibility: visible;
+    opacity: 1;
 }
 /* Home Section */
 .home{
