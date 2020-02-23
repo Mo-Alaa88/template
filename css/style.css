@@ -34,9 +34,49 @@ hover effect 1 ( left to right)
 .hover-opacity{
     transition: opacity .5s;
 }
-
 .hover-opacity:hover{
     opacity: 0.8;
+}
+.section-header{
+    text-align: center;
+}
+.section-header .section-title{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.line{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 4vw;
+    background-color: var(--mainMov);
+    margin: auto;
+}
+.pd-y{
+    padding: 120px 0;
+}
+.ltr-effect{
+    position: relative;
+}
+.ltr-effect:after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: var(--mainGray);
+    transition: width 0.5s;
+    z-index: -1;
+}
+.ltr-effect:hover:after{
+    width: 100%;
+    color: var(--mainWhite);
+}
+.section-header{
+    margin-bottom: 5vh;
 }
 /*  2-General Styles - color*/
 *{
@@ -47,6 +87,7 @@ hover effect 1 ( left to right)
 :root{
     --mainMov: #6195ff;
     --mainWhite: #ffffff;
+    --mainGray: #1C1D21;
 }
 body{
     font-family: 'Varela Round', sans-serif;
@@ -58,13 +99,18 @@ h1 ,h2, h3, h4, h5, h6{
 button{
     font-family: inherit;
 }
+a{
+    text-decoration: none;
+}
 /* 3-Sections Styles  */
 /*3-0- Nav bar Section */
 .container {
     width:80%;
     margin: auto;
 }
-
+i{
+ color: var(--mainMov);
+}
 nav{
      /* background: gray; */
      position: fixed;
@@ -94,7 +140,7 @@ nav .nav > li{
 }
 .nav > li > a{
     text-decoration: none;
-    color: #ffffff; 
+    color: var(--mainWhite); 
     padding: 35px 10px ;
     display: block;
     font-size: 14px;
@@ -136,7 +182,6 @@ nav .nav > li{
 .dropdown-menu > li > a{
     color: var(--mainWhite);
     display: block;
-    text-decoration: none;
 }
 .dropdown:hover .dropdown-menu{
     visibility: visible;
@@ -148,7 +193,7 @@ nav .nav > li{
     background-size: cover;
     height: 100vh;
     text-align: center;
-    color: #ffffff;
+    color: var(--mainWhite);
     position: relative;
 }
 /* Hero Image */
@@ -179,13 +224,41 @@ nav .nav > li{
 }
 .home .btn-start{
     margin-right: 10px;
-    background-color: #ffffff;
+    background-color: var(--mainWhite);
 }
 .home .btn-more{
     background-color: var(--mainMov);
-    color: #ffffff;
+    color: var(--mainWhite);
 }
 /* About Section */
+
+.about-item{
+    width: 30%;
+    float: left;
+    /* display: inline-block; */
+    text-align: center;
+    text-transform: capitalize;
+    padding: 50px 20px;
+}
+.about-item.mg{
+    margin: 0 5%;
+}
+.about-item .icon {
+    margin-bottom: 20px;
+}
+.about-title-desc{
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.about-item-link{
+    text-transform: capitalize;
+}
+.about-title{
+    transition: color 0.5s;
+}
+.about-item:hover .about-title{
+    color: var(--mainWhite);
+}
 /* Portfolio Section */
 /* Service Section */
 /* Prices Section */
