@@ -247,7 +247,7 @@ nav .nav > li{
     margin-bottom: 20px;
 }
 .about-title-desc{
-    line-height: 1.6;
+    line-height: 1.6rem;
     margin-bottom: 10px;
 }
 .about-item-link{
@@ -260,6 +260,62 @@ nav .nav > li{
     color: var(--mainWhite);
 }
 /* Portfolio Section */
+.portfolio{
+    background-color: #f9f9f9;
+}
+.portfolio-item{
+    width: 30%;
+    float: left;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 1.25rem;
+    /* text-align: center;
+    padding: 50px 20px;
+    text-transform: capitalize; */
+}
+.portfolio-item img{
+    width: 100%;
+}
+.portfolio-item.mg{
+    margin: 0 5%;
+}
+.portfolio-item .layer-content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+/* Hero Image concept */
+.layer-content .layer-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    text-align: center;
+}
+.category{
+    color: var(--mainMov);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.layer-content-title{
+    color: var(--mainWhite);
+    background-color: var(--mainMov);
+    font-size: 20px;
+    margin: 1.25rem 0;
+}
+.layer-content-link{
+    width: 25%;
+    /* padding: 20%; */
+    background-color: var(--mainMov);
+    color: var(--mainWhite);
+}
+
 /* Service Section */
 /* Prices Section */
 /* Team Section */
