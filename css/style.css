@@ -213,7 +213,6 @@ nav .nav > li{
     letter-spacing: 2px;
     line-height: 15px;
 }
-
 .home .btn{
     padding: 1vh 1.5vw;
     border-radius: 5px;
@@ -287,7 +286,9 @@ nav .nav > li{
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: opacity 0.5S;
 }
 /* Hero Image concept */
 .layer-content .layer-info{
@@ -302,20 +303,46 @@ nav .nav > li{
     color: var(--mainMov);
     text-transform: uppercase;
     font-size: 20px;
+    position: relative;
+    top: 10px;
+    transition: top 0.5s;
+    transition-delay:0.2s;
 }
 .layer-content-title{
     color: var(--mainWhite);
     background-color: var(--mainMov);
     font-size: 20px;
     margin: 1.25rem 0;
-}
-.layer-content-link{
-    width: 25%;
-    /* padding: 20%; */
-    background-color: var(--mainMov);
-    color: var(--mainWhite);
+    position: relative;
+    top: 10px;
+    transition: top 0.5s;
+    transition-delay:0.3s;
 }
 
+.layer-content .layer-content-link{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--mainMov);
+    transition: top 0.5s;
+    transition-delay:0.3s;
+}
+.layer-content .layer-content-link i{
+    color: var(--mainWhite);
+    line-height: 40px;
+    transition: top 0.5s;
+    transition-delay:0.3s;
+}
+.portfolio-item:hover .layer-content{
+    opacity: 1;
+}
+.portfolio-item:hover .layer-content-title,
+.portfolio-item:hover .category,
+.portfolio-item:hover .layer-content .layer-content-link i {
+    position: relative;
+    top: 0px;
+
+}
 /* Service Section */
 /* Prices Section */
 /* Team Section */
